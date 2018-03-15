@@ -1,0 +1,15 @@
+<layer>
+  <name>MeasureObservation</name>
+  <id>omsf_MeasureObservation_layer</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>point</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>omsf_MeasureObservation_featuretype</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

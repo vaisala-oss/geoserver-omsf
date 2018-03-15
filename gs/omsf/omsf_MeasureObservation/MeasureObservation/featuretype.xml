@@ -1,0 +1,44 @@
+<featureType>
+  <id>omsf_MeasureObservation_featuretype</id>
+  <name>MeasureObservation</name>
+  <nativeName>MeasureObservation</nativeName>
+  <namespace>
+    <id>omsf_namespace</id>
+  </namespace>
+  <title>MeasureObservation</title>
+  <nativeCRS>GEOGCS[&quot;ETRS89&quot;,
+  DATUM[&quot;European Terrestrial Reference System 1989&quot;,
+    SPHEROID[&quot;GRS 1980&quot;, 6378137.0, 298.257222101, AUTHORITY[&quot;EPSG&quot;,&quot;7019&quot;]],
+    TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    AUTHORITY[&quot;EPSG&quot;,&quot;6258&quot;]],
+  PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],
+  UNIT[&quot;degree&quot;, 0.017453292519943295],
+  AXIS[&quot;Geodetic longitude&quot;, EAST],
+  AXIS[&quot;Geodetic latitude&quot;, NORTH],
+  AUTHORITY[&quot;EPSG&quot;,&quot;4258&quot;]]</nativeCRS>
+  <srs>EPSG:4258</srs>
+  <nativeBoundingBox>
+    <minx>-16.1</minx>
+    <maxx>39.65</maxx>
+    <miny>32.88</miny>
+    <maxy>84.17</maxy>
+    <crs>EPSG:4258</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-16.1</minx>
+    <maxx>39.65</maxx>
+    <miny>32.88</miny>
+    <maxy>84.17</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <store class="dataStore">
+    <id>omsf_MeasureObservation_datastore</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

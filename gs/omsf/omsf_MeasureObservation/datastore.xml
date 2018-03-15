@@ -1,0 +1,13 @@
+<dataStore>
+    <id>omsf_MeasureObservation_datastore</id>
+    <name>omsf_MeasureObservation</name>
+    <enabled>true</enabled>
+    <workspace>
+        <id>omsf_workspace</id>
+    </workspace>
+    <connectionParameters>
+        <entry key="namespace">http://www.opengis.net/omsf/1.0</entry>
+        <entry key="url">file:workspaces/omsf/omsf_MeasureObservation/MeasureObservation-mapping.xml</entry>
+        <entry key="dbtype">app-schema</entry>
+    </connectionParameters>
+</dataStore>

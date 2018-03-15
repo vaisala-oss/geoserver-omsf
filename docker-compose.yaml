@@ -1,0 +1,46 @@
+version: '2.2'
+services:
+  geoserver:
+    build:
+      context: ./gs
+    ports:
+      - "8123:8080"
+      - "5005:5005"
+    environment:
+      CATALINA_OPTS: -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
+    volumes:
+      - /opt/geoserver/data_dir
+    links:
+      - postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+        
+  postgres:
+    image: "mdillon/postgis:9.6-alpine"
+    ports:
+      - "5432"
+    volumes:
+      - /var/lib/postgresql/data
+    environment:
+      PGPASSWORD: oursecret
+      POSTGRES_PASSWORD: oursecret
+    healthcheck:
+      test: ["CMD", "psql", "-U", "postgres", "-l"]
+      interval: 10s
+      timeout: 10s
+      retries: 6
+      
+  dbinitializer:
+    build:
+      context: ./initializer
+    links:
+      - postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      PGHOST: postgres
+      PGUSER: postgres
+      PGPASSWORD: oursecret
+

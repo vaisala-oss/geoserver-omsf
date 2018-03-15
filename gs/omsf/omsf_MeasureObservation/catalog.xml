@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog
+  PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN"
+         "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
+         prefer="public">
+
+         <uri name="http://www.opengis.net/omsf/1.0" uri="https://raw.githubusercontent.com/opengeospatial/omsf-profile/master/omsf-profile.xsd"/>
+         <uri name="http://www.opengis.net/gml/3.2" uri="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+         <uri name="http://www.opengis.net/gmlsf/2.0" uri="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd"/>
+         <uri name="http://www.w3.org/1999/xlink" uri="https://www.w3.org/1999/xlink.xsd"/>
+</catalog>
