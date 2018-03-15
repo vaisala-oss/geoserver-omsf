@@ -19,5 +19,5 @@ curl 'http://10.13.37.100:8123/geoserver/omsf/ows?service=WFS&version=2.0.0&requ
 
 # Issues
 
-* xlink namespace is not declared, and is missing from the omsf:observedProperty link
+* xlink namespace is not declared, and is missing from the omsf:observedProperty link, because of GEOS-[8633](https://osgeo-org.atlassian.net/browse/GEOS-8633)
 * OMSF schema location points to the namespace identifier URI, not to its actual location
