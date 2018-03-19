@@ -5,6 +5,7 @@ RUN cd /usr/local/tomcat/webapps/geoserver/WEB-INF/lib && unzip -o geoserver-2.1
 
 RUN mkdir -p /init-data
 COPY omsf /init-data/omsf
+COPY xlink /init-data/xlink
 COPY *.xml /init-data/
 COPY init-data.sh /
 
